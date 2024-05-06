@@ -105,9 +105,9 @@ const Login = () => {
 											Password
 										</label>
 										{showPassword ? (
-											<img src={images[1].path} alt={images[1].alt} srcSet={images[1].srcset} className='absolute right-4 top-0.5 h-6 w-6 cursor-pointer' onClick={() => setShowPassword(false)} /> // modify this line
+											<img src='/show.svg' alt={images[1].alt} srcSet={images[1].srcset} className='absolute right-4 top-0.5 h-6 w-6 cursor-pointer' onClick={() => setShowPassword(false)} /> // modify this line
 										) : (
-											<img src={images[2].path} alt={images[2].alt} srcSet={images[2].srcset} className='absolute right-4 top-0.5 h-6 w-6 cursor-pointer' onClick={() => setShowPassword(true)} /> // modify this line
+											<img src='/hide.svg' alt={images[2].alt} srcSet={images[2].srcset} className='absolute right-4 top-0.5 h-6 w-6 cursor-pointer' onClick={() => setShowPassword(true)} /> // modify this line
 										)}
 									</div>
 								</div>
@@ -140,7 +140,7 @@ const Login = () => {
 					</div>
 				</div>
 			</div>
-			<NotReadyResponsive />
+			{/* <NotReadyResponsive /> */}
 		</>
 	);
 };
